@@ -98,7 +98,6 @@ a:focus {
 /*Estilos header*/
 
 #header {
-  border: 1px red solid;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -110,9 +109,6 @@ a:focus {
   z-index: 1050;
 }
 
-.collapse {
-  border: solid 1px blue;
-}
 
 .nav-item {
   border: solid rgb(70, 94, 171) 2px;
@@ -121,7 +117,6 @@ a:focus {
 }
 
 .navbar-nav {
-  border: solid green 2px;
   align-items: center;
   row-gap: 3px;
 }
@@ -130,13 +125,12 @@ a:focus {
 
 
 #main {
-  
   background-color: rgb(230, 236, 245);
   display: flex;
   flex-direction: column;
   row-gap: 60px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 40px;
   margin: 3rem 0;
   max-width: 1800px;
 }
@@ -175,7 +169,6 @@ a:focus {
 }
 
 .lander__img {
-  border: solid;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -185,14 +178,13 @@ a:focus {
 
 /*HomePage - Portfolio Section*/
 #carouselExample {
-  border: solid rgb(36, 30, 105) 5px;
   width: 90%;
 }
 
 .c-item {
   height: 300px; /*hacer mediqueries para que se adapte a otras pantallas*/
 }
-
+/*aplica tambien para carusel de proyectos*/
 .c-img {
   height: 100%;
   object-fit: cover;
@@ -211,8 +203,8 @@ a:focus {
 }
 
 .homesect2__image {
-  
-  border: solid;
+  border-radius: 2rem;
+  border: solid rgb(134, 134, 204);
   width: 300px;
   height:100%;
 }
@@ -230,14 +222,15 @@ a:focus {
 /*HomePage - Contact Section*/
 
 .homesect4__image {
-  border: solid;
+
   width: 300px;
   height: 100%;
+  border-radius: 2rem;
 }
 
 
 .homesect4__form {
-  border: solid 3px violet ;
+  
   width: 100%;
   height: 400px;
   display: flex;
@@ -253,7 +246,9 @@ a:focus {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-    border: solid;
+    background-color: rgba(191, 189, 241, 0.676);
+    border-radius: 20px;
+    padding: 1rem;
     width: 90%;
     height: 300px;
     
@@ -282,11 +277,11 @@ a:focus {
 .formitems-button {
     width: 80px;
     color: rgb(255, 253, 255);
-    
     border: none;
     background-color: rgb(139, 107, 191);
     border-radius: 20px;
 }
+
 
 
 
@@ -330,18 +325,7 @@ a:focus {
 
 /*Estilos PORTFOLIO Page*/
 
-.portfolioPage__container {
-  
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  row-gap: 20px;
-  padding: 2rem 1rem;
-}
+
 
 
 .portafolio__pictures{
@@ -352,6 +336,7 @@ a:focus {
   align-items: center;
   justify-content: center;
   row-gap: 40px;
+  padding: 1rem;
 
 
 }
@@ -400,6 +385,199 @@ a:focus {
   width: 100%;
   height: auto;
 }
+
+
+
+/*---Media Queries Desktops---*/
+
+@media (min-width: 992px) {
+
+/*Titulos*/
+.lander__title {
+  font-size: 15rem;
+  color: rgb(119, 158, 243);
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(106, 121, 205);
+}
+
+
+h2 {
+  font-size: 3rem;
+  color: rgb(106, 121, 205);
+}
+
+/*Header*/
+
+.nav-item {
+  border-radius: 20px;
+  width: 100px; /*cambio del tamaño de los botones*/
+}
+
+
+
+/*Main Page*/
+
+#main {
+  margin: 3rem auto;
+  
+}
+
+.containerMain {
+  border: dotted 2px rgb(151, 142, 215);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  row-gap: 20px;
+}
+
+
+/*HOME PAGE*/
+
+
+/*Lander*/
+.lander {
+  position: relative;
+}
+
+.lander__img {
+  max-width: 100%;
+  height: 90%;
+}
+
+.lander__title {
+  position: absolute;
+  align-self: center;
+  top: 150px;
+}
+
+/*HomePage - Portfolio Section*/
+
+.homesect1 {
+  height: 700px;
+}
+
+#carouselExample {
+  width: 950px;
+}
+
+.c-item {
+  height: 500px; /*tamaño desde 992px*/
+}
+/*aplica tambien para carusel de proyectos*/
+
+
+/*HomePage - About Me Section*/
+
+.homesect2__info{
+  
+  flex-direction: row;
+  column-gap: 3rem;
+  padding: 2rem;
+
+}
+
+.homesect2__image {
+  width: 400px;
+}
+
+/*HomePage - Projects Section*/
+
+.homesect3 {
+  height: 700px;
+}
+
+#carouselExample_2 {
+  width: 950px;
+}
+
+
+/*HomePage - Contact Section*/
+
+.homesect4 {
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homesect4__image {
+  height: auto;
+  width: 400px;
+}
+
+.homesect4__form {
+  width: 500px;
+  height: 500px;
+}
+
+.homesect4__formitems textarea{
+    height: 200px;
+    
+}
+
+/*Estilos PORTFOLIO Page*/
+
+
+.portafolio__pictures{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+
+}
+
+/*imagenes individuales*/
+
+.portafolio__pictures--img{
+  
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  background-color: rgb(182, 213, 255);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.portafolio__pictures--img img{
+ height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.portafolio__pictures--img article{
+  font-size: 1rem;
+  color: black;
+}
+
+
+/*Footer*/
+
+#footer {
+  flex-direction: row;
+  height: 150px;
+}
+
+.footer__info p {
+  margin: 0;  
+}
+
+
+}
+
+
 
 
 
