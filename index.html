@@ -36,7 +36,7 @@
 
             <div class="container-fluid">
               <!--Logo-->
-              <a class="navbar-brand" href="#"> <img src="/icons/logoPage.png" alt="logoIcon" width="50"></a>
+              <a class="navbar-brand" href="#"> <img src="icons/logoPage.png" alt="logoIcon" width="50"></a>
 
               <!--burger mobile menu-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,8 +73,8 @@
     </header>
     
 
-    <!--Main start-->
 
+    <!--Main start-->
 
     <main id="main">
 
@@ -93,9 +93,9 @@
 <!-- Portfolio Section -->
         <section class="containerMain homesect1">
 
-            <h2 class="homesect1__title">Portafolio</h2>
+            <h2 class="homesect1__title title">Portafolio</h2>
 
-<!-- Carousel --> 
+          <!-- Carousel --> 
                
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" >
 
@@ -149,9 +149,11 @@
             <h2 class="homesect2__title">Sobre mi</h2>  
             
             <section class="homesect2__info">
-            <img class="imgMain"  src="image/aboutMePic.png" alt="aboutmeImg">
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, pariatur eaque sequi quisquam fugiat assumenda culpa numquam! Nostrum, modi nemo rem beatae, eos vero ipsa odit sint voluptate et doloremque rerum minima repudiandae aperiam vel ullam. Hic quas voluptates, molestias consequatur amet quisquam laboriosam. Quidem eos minus a, excepturi inventore repellat ea, dolores repudiandae harum, illo aperiam aliquid. Accusantium, aspernatur?</p>
+              <img class="homesect2__image"  src="image/aboutMePic.png" alt="aboutmeImg">
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi laborum dolore libero qui ratione magnam, doloribus id, perferendis explicabo odit ipsa iusto esse placeat voluptatibus? Dicta repellat laboriosam in. Facere magni maxime accusantium provident excepturi consequatur magnam dignissimos totam!</p>
+
             </section>
 
             <a class="homesect2__button button" href="/pages/contacto.html">Sobre Mi</a>
@@ -161,39 +163,51 @@
 <!-- Projects Section -->
         <section class="containerMain homesect3">
 
-            <h2>Proyectos</h2>
- <!-- Carousel-->           
-            <section class="homesect3__slider">
-<!--
-            <img class="imgMain" src="image/mariposaPortada.png" alt="pry1">
-            <img class="imgMain" src="image/flip.png" alt="pry2">
-            <img class="imgMain" src="image/rend01test.png" alt="pyr3">
--->
+            <h2 class="homesect3__title title" >Proyectos</h2>
+ 
+          <!-- Carousel --> 
+               
+          <div id="carouselExample_2" class="carousel slide" data-bs-ride="carousel" >
 
+           
+            <!-- carousel pictures -->
 
-            <div id="carouselExample" class="carousel slide col-lg-5" >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="image/ilustracionLuisa.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="image/ilustracionMatrimonio.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="image/mariposaPortada.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+            <div class="carousel-inner c-inner">
+              <div class="carousel-item active c-item">
+                <img src="image/mariposaPortada.png" class="d-block w-100 c-img" alt="ilustration-4">
               </div>
-            </section>
+              <div class="carousel-item c-item">
+                <img src="image/flip.png" class="d-block w-100 c-img" alt="ilustration*5">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="image/rend01test.png" class="d-block w-100 c-img" alt="render-01">
+              </div>
+            </div>
+
+            <!-- slide arrow buttons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample_2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample_2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- slide indicators -->
+            <div class="carousel-indicators">
+
+              <button type="button" data-bs-target="#carouselExample_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+              <button type="button" data-bs-target="#carouselExample_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+              <button type="button" data-bs-target="#carouselExample_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              
+            </div>
+
+          </div>            
+           
+
 
             <a class="homesect3__button button" href="pages/proyectos.html">Ver Mas</a>
             
@@ -201,39 +215,38 @@
 
 <!-- Contact Section -->
         <section class="containerMain homesect4">
-         <!--
-            <img class="imgMain" src="image/contactImage.png" alt="contactImg">
-          -->   
-            
-<!--Form -->          
+
+            <img class="homesect4__image" src="image/contactImage.png" alt="contactImg">
+              
             <section class="homesect4__form form">
 
-                <img class="homesect4__image" src="image/contactImage.png" alt="contactImg">
+                    <h2 class="homesect4__title title">Contacto</h2>
 
+                <!--Form -->
 
-                <section>
+                    <form action="" class="homesect4__formitems">
 
-                    <h2>Contacto</h2>
+                    
+                      <input class="formtext" type="text" placeholder="Nombre" name="nombre" id="nombre">     
                 
-                        <form action="" id="mainFormulario">
-
-                        <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre">     
+                    
+                      <input class="formtext" type="text" placeholder="Apellido" name="apellido" id="apellido">     
                 
-                    <label for="apellido">Apellido</label>
-                    <input type="text" placeholder="Apellido" name="apellido" id="apellido">     
-                
-                    <label for="correo">Correo</label>
-                    <input type="text" placeholder="Correo" name="correo" id="correo">     
+                    
+                      <input class="formtext" type="text" placeholder="Correo" name="correo" id="correo">     
 
-                    <label for="mensajeForm">Mensaje</label>
-                    <textarea name="" id="mensajeForm" placeholder="Enviame tu mensaje"></textarea>
+                    
+                      <textarea class="formArea" name="" id="mensajeForm" placeholder="Enviame tu mensaje"></textarea>
 
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
+                      <section class="formitems-buttons">
+
+                        <input class="formitems-button" type="submit" value="Enviar">
+                        <input class="formitems-button" type="reset" value="Borrar">
+
+                      </section>
 
                     </form>
-                </section>
+               
             </section>
 
         </section>

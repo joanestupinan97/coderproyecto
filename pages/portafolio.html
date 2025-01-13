@@ -26,76 +26,121 @@
 </head>
 
 <body id="body">
+    <!-- Header Start-->
+
     <header id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-            <div class="container-fluid">
+      <nav id="navbar" class="navbar navbar-expand-lg">
 
-                <a class="navbar-brand" href="../index.html">
-                    <img src="/icons/logoPage.png" alt="logoIcon" width="50">
-                  </a>
+          <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="../index.html"> <img src="../icons/logoPage.png" alt="logoIcon" width="50"></a>
+
+            <!--burger mobile menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Logo-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav column-gap-3 ms-auto">
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav">
-
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Portafolio</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="sobremi.html">Sobre Mi</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="proyectos.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                  
-                </ul>
-
-              </div>
-
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+              </ul>
+           
             </div>
+          </div>
 
-          </nav>
-    </header>
+      </nav>
 
+  </header>
+  
+
+
+  <!--Main start-->
     <main id="main">
-        <h1>Portafolio</h1>
-        <hr>
+      
+      
+
+      <section class="portfolioPage__container">
+        
+        <h1>PORTAFOLIO</h1>
+
+        <section class="portafolio__pictures">
+        
+          <section class="portafolio__pictures--img">
+              <img src="../image/portadashampeee.png" alt="portada_Shampee">
+              <h3>Portada single Shampee</h3>
+              <article>Ilustración realizada para portada de single musical de artista colombiano Shampee</article>
+          </section>
+
+          <section class="portafolio__pictures--img">              
+            <img src="../image/ilustracionLuisa.png" alt="ilustracion_Luisa">
+            <h3>Everything Denied/ Nothing Revealed</h3>
+            <article>Ilustración a pedido de cliente inspirada en una canción</article>
+          </section>
+
+          <section class="portafolio__pictures--img">
+            <img src="../image/ilustracionMatrimonio.png" alt="ilustracion_Matrimonio">
+            <h3>Ilustración Matrimonio</h3>
+            <article>Ilustración/retrato a pedido de cliente para una conmemoración de matrimonio.</article>
+          </section>  
+      
+          <section class="portafolio__pictures--img">
+            <img src="../image/mariposaPortada.png" alt="portada_Mariposa">
+            <h3>Mariposa Polinizador</h3>
+            <article>Portada a pedido de cliente para colección de libros "Polinizadores" bajo la editorial Colombiana Tagigo</article>
+          </section>
+        </section>
+
+
+
+
+
+
+
+      </section>   
+
+
+
     </main>
 
- <!--Footer  start-->
+<!--Footer-->
 
 
- <footer id="footer">
+<footer id="footer">
 
-    <section class="infoFooter">
-        <p>Copyright 2024</p>
-        <p>Creado por - Joan Estupiñan</p>
-        <p>sebasjo987@hotmail.com</p>
-    </section>
-    
-    <section class="redesFooter">
-        <a href="https://www.instagram.com/etc.exe/?hl=es-la" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
-        <a href="https://www.facebook.com/exe.etc/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
-        <a href="https://www.artstation.com/nojaseb" target="_blank"> <i class="fa-brands fa-artstation"></i> </a>
-    </section>
+  <section class="footer__info">
+      <p>Copyright 2024</p>
+      <p>Creado por - Joan Estupiñan</p>
+      <p>sebasjo987@hotmail.com</p>
+  </section>
+  
+  <section class="footer__social">
 
-    <section class="botonFooter">
-        <a href="#">Ir Arriba</a>
-    </section>
+      <a href="https://www.instagram.com/etc.exe/?hl=es-la" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+      <a href="https://www.facebook.com/exe.etc/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+      <a href="https://www.artstation.com/nojaseb" target="_blank"> <i class="fa-brands fa-artstation"></i> </a>
+  </section>
+
+  <section class="footer__button">
+      <a class="footer__button--button" href="#">Ir Arriba</a>
+  </section>
 
 </footer>
 

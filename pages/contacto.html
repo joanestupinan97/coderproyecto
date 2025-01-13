@@ -28,109 +28,127 @@
 
 <body id="body">
 
+    <!-- Header Start-->
 
     <header id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-            <div class="container-fluid">
+      <nav id="navbar" class="navbar navbar-expand-lg">
 
-                <a class="navbar-brand" href="../index.html">
-                    <img src="/icons/logoPage.png" alt="logoIcon" width="50">
-                  </a>
+          <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="../index.html"> <img src="../icons/logoPage.png" alt="logoIcon" width="50"></a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-                </button>
+            <!--burger mobile menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav">
-
+            <!--Logo-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav column-gap-3 ms-auto">
+                
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="portafolio.html">Portafolio</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="sobremi.html">Sobre Mi</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="proyectos.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacto</a>
-                  </li>
-                  
-                </ul>
-
-              </div>
-
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="portafolio.html">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobremi.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+              </ul>
+           
             </div>
+          </div>
 
-          </nav>
-    </header>
+      </nav>
+
+  </header>
+  
+
+
+  <!--Main start-->
 
 
     <main id="main">
-        <h1>CONTACTO</h1>
+      
+      <section class="contactPage__container">
+        
+        <img class="contactPage__image" src="../image/contactImage.png" alt="contactImg">
 
-        <section class="imagenContacto">
+        <section class="homesect4__form">
+
+          <h1 class="homesect4__title title">CONTACTO</h1>
+
+          
+          <form class="contactPage__form" action="" >
+
+               
+                <input class="formtext" type="text" placeholder="Nombre" name="nombre" id="nombre">     
+            
+              
+                <input class="formtext" type="text" placeholder="Apellido" name="apellido" id="apellido">     
+            
+              
+                <input class="formtext" type="text" placeholder="Correo" name="correo" id="correo">     
+
+               
+                <textarea class="formArea" name="" id="mensajeForm" placeholder="Enviame tu mensaje"></textarea>
+
+
+              <section class="formitems-buttons">
+
+                <input class="formitems-button" type="submit" value="Enviar">
+                <input class="formitems-button" type="reset" value="Borrar">
+
+              </section>
+
+          </form>
 
         </section>
 
-        <section>
-            <form action="" id="contactoFormulario">
 
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Nombre" name="nombre" id="nombre">     
-            
-                <label for="apellido">Apellido</label>
-                <input type="text" placeholder="Apellido" name="apellido" id="apellido">     
-            
-                <label for="correo">Correo</label>
-                <input type="text" placeholder="Correo" name="correo" id="correo">     
-
-                <label for="mensajeForm">Mensaje</label>
-                <textarea name="" id="mensajeForm" placeholder="Enviame tu mensaje"></textarea>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-
-            </form>
-        </section>
-
+      </section>
 
         <section class="mapaFormContacto">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1732820204279!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51141489705!2d-74.107807!3d4.64829755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1732820204279!5m2!1ses!2sco" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>                
     </main>
 
     
-    <!--Footer  start-->
 
 
-    <footer id="footer">
+<!--Footer-->
 
-        <section class="infoFooter">
-            <p>Copyright 2024</p>
-            <p>Creado por - Joan Estupiñan</p>
-            <p>sebasjo987@hotmail.com</p>
-        </section>
-        
-        <section class="redesFooter">
-            <a href="https://www.instagram.com/etc.exe/?hl=es-la" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
-            <a href="https://www.facebook.com/exe.etc/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
-            <a href="https://www.artstation.com/nojaseb" target="_blank"> <i class="fa-brands fa-artstation"></i> </a>
-        </section>
 
-        <section class="botonFooter">
-            <a href="#">Ir Arriba</a>
-        </section>
+<footer id="footer">
 
-    </footer> 
+  <section class="footer__info">
+      <p>Copyright 2024</p>
+      <p>Creado por - Joan Estupiñan</p>
+      <p>sebasjo987@hotmail.com</p>
+  </section>
+  
+  <section class="footer__social">
+
+      <a href="https://www.instagram.com/etc.exe/?hl=es-la" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+      <a href="https://www.facebook.com/exe.etc/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+      <a href="https://www.artstation.com/nojaseb" target="_blank"> <i class="fa-brands fa-artstation"></i> </a>
+  </section>
+
+  <section class="footer__button">
+      <a class="footer__button--button" href="#">Ir Arriba</a>
+  </section>
+
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

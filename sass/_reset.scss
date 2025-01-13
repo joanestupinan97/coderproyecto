@@ -1,0 +1,28 @@
+
+/* funcionamiento margin y padding
+
+margin 10px 10px 10px 10px
+        T   R   B   L
+
+margin 20px
+        TRBL al tiempo
+
+margin 20px 10px
+        T B / L R        
+
+margin 10px 10px 20px "No se usa mucho"
+        T    LR   B
+*/
+
+
+/*Reset de Estilos*/
+
+* {
+    padding:0; 
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-family: "Parkinsans" 
+}
+
+
