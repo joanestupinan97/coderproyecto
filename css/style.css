@@ -179,10 +179,11 @@ a:focus {
 /*HomePage - Portfolio Section*/
 #carouselExample {
   width: 90%;
+  max-width: 1400px;
 }
 
 .c-item {
-  height: 300px; /*hacer mediqueries para que se adapte a otras pantallas*/
+  height: 350px; 
 }
 /*aplica tambien para carusel de proyectos*/
 .c-img {
@@ -325,31 +326,28 @@ a:focus {
 
 /*Estilos PORTFOLIO Page*/
 
-
-
-
 .portafolio__pictures{
-  
+  border: solid;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 40px;
+  gap: 40px;
   padding: 1rem;
-
-
 }
 
 /*imagenes individuales*/
 
 .portafolio__pictures--img{
+  border: red solid 1px;
   
-  height: 100%;
+  max-width: 600px;
   
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   row-gap: 20px;
   background-color: rgb(182, 213, 255);
   border-radius: 1rem;
@@ -357,15 +355,16 @@ a:focus {
 }
 
 .portafolio__pictures--img img{
-  width: 100%;
-  height: auto;
   max-width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 20px;
   object-fit: cover;
 }
 .portafolio__pictures--img article{
   font-size: 1rem;
   color: black;
+  border: 1px blue solid;
 }
 
 
@@ -458,18 +457,12 @@ h2 {
 /*HomePage - Portfolio Section*/
 
 .homesect1 {
-  height: 700px;
-}
-
-#carouselExample {
-  width: 950px;
+  height:900px
 }
 
 .c-item {
-  height: 500px; /*tamaño desde 992px*/
+  height: 700px;
 }
-/*aplica tambien para carusel de proyectos*/
-
 
 /*HomePage - About Me Section*/
 
@@ -488,11 +481,7 @@ h2 {
 /*HomePage - Projects Section*/
 
 .homesect3 {
-  height: 700px;
-}
-
-#carouselExample_2 {
-  width: 950px;
+  height: 900px;
 }
 
 
@@ -522,7 +511,7 @@ h2 {
 
 /*Estilos PORTFOLIO Page*/
 
-
+/*
 .portafolio__pictures{
   
   flex-direction: row;
@@ -530,8 +519,6 @@ h2 {
   justify-content: space-evenly;
   gap: 30px;
 }
-
-/*imagenes individuales*/
 
 .portafolio__pictures--img{
   
