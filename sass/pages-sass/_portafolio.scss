@@ -1,0 +1,41 @@
+  /*Estilos PORTFOLIO Page*/
+  
+  .portafolio__pictures{
+    border: solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 1rem;
+  }
+  
+  /*imagenes individuales*/
+  
+  .portafolio__pictures--img{
+    border: red solid 1px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+    background-color: rgb(182, 213, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .portafolio__pictures--img img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .portafolio__pictures--img article{
+    font-size: 1rem;
+    color: black;
+    border: 1px blue solid;
+  }
+  

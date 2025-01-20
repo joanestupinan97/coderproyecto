@@ -1,0 +1,160 @@
+
+  
+  /*--------Media Queries Desktops----------*/
+  
+  @media (min-width: 992px) {
+  
+  
+    /*Header*/
+    
+    .nav-item {
+      border-radius: 20px;
+      width: 100px; /*cambio del tamaño de los botones*/
+    }
+    
+    
+    /*Main Page*/
+    
+    #main {
+      margin: 3rem auto;
+      
+    }
+    
+    .containerMain {
+      border: dotted 2px rgb(151, 142, 215);
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      row-gap: 20px;
+    }
+    
+    
+    /*HOME PAGE*/
+    
+    
+    /*Lander*/
+    .lander {
+      position: relative;
+    }
+    
+    .lander__img {
+      max-width: 100%;
+      height: 90%;
+    }
+    
+    .lander__title {
+      position: absolute;
+      align-self: center;
+      top: 150px;
+    }
+    
+    /*HomePage - Portfolio Section*/
+    
+    .homesect1 {
+      height:900px
+    }
+    
+    .c-item {
+      aspect-ratio: 2/1;
+    }
+    
+    /*HomePage - About Me Section*/
+    
+    .homesect2__info{
+      
+      flex-direction: row;
+      column-gap: 3rem;
+      padding: 2rem;
+    
+    }
+    
+    .homesect2__image {
+      width: 400px;
+    }
+    
+    /*HomePage - Projects Section*/
+    
+    .homesect3 {
+      height: 900px;
+    }
+    
+    
+    /*HomePage - Contact Section*/
+    
+    .homesect4 {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .homesect4__formitems textarea{
+        height: 200px;  
+    }
+    
+    /*Estilos CONTACT Page*/
+    
+    .contactPage__container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 80vh;
+    }
+    .mapaFormContacto iframe{
+      width: 600px;
+    }
+    
+    /*Estilos PROYECTS Page*/
+    
+    .projectsPage__container {
+      border: solid;
+      grid-template-columns: 4fr auto 4fr;
+      grid-template-rows: 3rem 3fr 4rem 3fr;
+    }
+    .project__picture {
+      margin: 0;
+      aspect-ratio: 1.5/1;
+      max-width: 100%;
+    }
+    .project1__title{
+      grid-column: 1/2;
+    }
+    
+    .projectimg1 {
+      grid-row: 2/3;
+    }
+    
+    .projectimg2 {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+    
+    .project1--paragrahp {
+      grid-column: 1/4;
+      grid-row: 3/4 ;
+      background-color: beige;
+    }
+    
+    .projectimg3 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    
+    .projectimg4{
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+    
+    
+    /*Footer*/
+    
+    #footer {
+      flex-direction: row;
+      height: 150px;
+    }
+    
+    .footer__info p {
+      margin: 0;  
+    }
+
+}

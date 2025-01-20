@@ -1,0 +1,29 @@
+  /*ESTILOS GENERALES BODY*/
+  
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 247, 242);
+  }
+  
+  
+  
+  /*estilos listas*/
+  
+  li {
+    list-style: none;
+  }
+  
+  
+  /*estilos links*/
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: underline; /* Highlight link on interaction */
+  }
+  

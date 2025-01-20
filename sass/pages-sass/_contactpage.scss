@@ -1,0 +1,45 @@
+  /* Estilos CONTACT PAGE*/
+  
+  
+  
+  .contactPage__container {
+    border: solid rgb(235, 186, 186);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .contactPage__image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 2rem;
+  }
+  
+  .contactPage__form {
+    background-color: rgba(191, 189, 241, 0.676);
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+  }
+  
+  .contactPage__form textarea {
+    height: 100px;
+  }
+  .mapaFormContacto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

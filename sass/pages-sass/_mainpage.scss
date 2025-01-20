@@ -1,0 +1,121 @@
+  /*HOME PAGE*/
+  
+  
+  /*Lander*/
+  .lander {
+    justify-content: space-evenly;
+    position: relative;
+  }
+  
+  .lander__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+  }
+  
+  
+  /*HomePage - Portfolio Section*/
+  #carouselExample {
+    width: 90%;
+    max-width: 1400px;
+  }
+  
+  .c-item {
+    aspect-ratio: 1/1;
+  }
+  /*aplica tambien para carusel de proyectos*/
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+  }
+  
+  
+  /*HomePage - About Me Section*/
+  
+  .homesect2__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  
+  }
+  
+  .homesect2__image {
+    border-radius: 2rem;
+    border: solid rgb(134, 134, 204);
+    width: 300px;
+    height:100%;
+  }
+  
+  /*HomePage - Projects Section*/
+  
+  #carouselExample_2 {
+    width: 90%;
+    max-width: 1400px;
+  }
+  
+  
+  
+  
+  /*HomePage - Contact Section*/
+  
+  .homesect4__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .homesect4__form {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .homesect4__formitems {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+      background-color: rgba(191, 189, 241, 0.676);
+      border-radius: 20px;
+      padding: 1rem;
+      width: 90%;
+      
+      max-height: 300px;  
+  }
+  
+  .formtext, .formArea  {
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      width: 90%;   
+  }
+  
+  .homesect4__formitems textarea{
+      height: 100px;
+      
+  }
+  .formitems-buttons{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 10px;
+  }
+  
+  .formitems-button {
+      width: 80px;
+      color: rgb(255, 253, 255);
+      border: none;
+      background-color: rgb(139, 107, 191);
+      border-radius: 20px;
+  }
+ 

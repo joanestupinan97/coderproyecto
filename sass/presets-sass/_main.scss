@@ -1,0 +1,40 @@
+ 
+  /* estilos main*/
+  
+  
+  #main {
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    padding-top: 40px;
+    margin: 3rem 0;
+    width: 100%;
+    max-width: 1800px;
+  }
+  
+  .containerMain {
+    background-color: rgb(230, 236, 245);
+    border: dotted 3px rgba(34, 0, 128, 0.523);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  
+  
+  .button {
+    width: 90px;
+    border: none;
+    background-color: rgb(139, 107, 191);
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+  }
