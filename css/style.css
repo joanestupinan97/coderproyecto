@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Variables y animaciones*/
 /*Presets*/
 /* funcionamiento margin y padding
 
@@ -33,6 +34,7 @@ body {
 /*estilos listas*/
 li {
   list-style: none;
+  transition: all 0.3s;
 }
 
 /*estilos links*/
@@ -40,9 +42,19 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline; /* Highlight link on interaction */
+li:hover {
+  font-weight: bold;
+  background-color: rgb(189, 189, 238);
+  border-radius: 30px;
+  transform: translateY(-3px); /*animacion botones header*/
+}
+
+li:active {
+  background-color: rgb(172, 107, 238);
+}
+
+::placeholder {
+  color: rgb(148, 167, 214);
 }
 
 /*Estilos titulos*/
@@ -61,9 +73,17 @@ h1 {
   text-align: center;
 }
 
+h1:hover {
+  color: rgb(164, 139, 234);
+}
+
 h2 {
   font-size: clamp(2rem, 6vw, 3rem);
   color: rgb(106, 121, 205);
+}
+
+h2:hover {
+  color: rgb(238, 190, 173);
 }
 
 /*Estilos header*/
@@ -74,8 +94,11 @@ h2 {
   background-color: rgb(174, 183, 229);
   text-align: center;
 }
-
-.navbar-toggler {
+#header .navbar-nav {
+  align-items: center;
+  row-gap: 3px;
+}
+#header .navbar-toggler {
   z-index: 1050;
 }
 
@@ -83,11 +106,6 @@ h2 {
   border: solid rgb(70, 94, 171) 2px;
   border-radius: 20px;
   width: 200px;
-}
-
-.navbar-nav {
-  align-items: center;
-  row-gap: 3px;
 }
 
 /* estilos main*/
@@ -98,7 +116,7 @@ h2 {
   padding-top: 40px;
   margin: 3rem 0;
   width: 100%;
-  max-width: 1800px;
+  max-width: 1600px;
 }
 
 .containerMain {
@@ -123,6 +141,14 @@ h2 {
   color: white;
   border-radius: 20px;
   text-align: center;
+  transition: all 0.3s; /*animacion botones main*/
+}
+
+.button:hover {
+  font-weight: bold;
+  background-color: rgb(189, 189, 238);
+  border-radius: 30px;
+  transform: translateY(-10px); /*animacion botones main*/
 }
 
 /*Pages*/
@@ -132,14 +158,28 @@ h2 {
   justify-content: space-evenly;
   position: relative;
 }
-
-.lander__img {
+.lander .lander__img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
   z-index: 1;
+  animation: welcome-title 0.5s 0.7s backwards;
+}
+.lander .lander__title {
+  animation: welcome-title 0.5s 0.4s backwards;
 }
 
+/*animacion lander*/
+@keyframes welcome-title {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 /*HomePage - Portfolio Section*/
 #carouselExample {
   width: 90%;
@@ -164,12 +204,12 @@ h2 {
   align-items: center;
   row-gap: 20px;
 }
-
-.homesect2__image {
+.homesect2__info .homesect2__image {
   border-radius: 2rem;
   border: solid rgb(134, 134, 204);
-  width: 300px;
-  height: 100%;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
 /*HomePage - Projects Section*/
@@ -207,16 +247,15 @@ h2 {
   width: 90%;
   max-height: 300px;
 }
+.homesect4__formitems textarea {
+  height: 100px;
+}
 
 .formtext, .formArea {
   text-align: center;
   border: none;
   border-radius: 10px;
   width: 90%;
-}
-
-.homesect4__formitems textarea {
-  height: 100px;
 }
 
 .formitems-buttons {
@@ -226,8 +265,7 @@ h2 {
   align-items: center;
   row-gap: 10px;
 }
-
-.formitems-button {
+.formitems-buttons .formitems-button {
   width: 80px;
   color: rgb(255, 253, 255);
   border: none;
@@ -320,24 +358,27 @@ h2 {
 }
 
 /*Estilos PROYECTS Page*/
-.projectsPage__container {
+.container_Projects {
   border-radius: 1rem;
   background-color: rgba(202, 197, 240, 0.962);
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
   gap: 2rem;
   text-align: justify;
+}
+.container_Projects p {
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .project__picture {
   border-radius: 2rem;
   width: 100%;
   max-width: 700px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 2/1;
   margin: 0 auto;
 }
 
@@ -396,13 +437,14 @@ h2 {
   background-color: rgb(209, 176, 225);
   text-align: center;
 }
-
-.footer__social i {
+#footer p {
+  margin: 0;
+}
+#footer i {
   font-size: 35px;
   color: rgb(85, 51, 117);
 }
-
-.footer__button--button {
+#footer .footer__button--button {
   border: solid 3px;
   border-radius: 30px;
   padding: 5px;
@@ -413,7 +455,10 @@ h2 {
 /*--------Media Queries Desktops----------*/
 @media (min-width: 992px) {
   /*Header*/
-  .nav-item {
+  .navbar-collapse {
+    margin-right: 1rem;
+  }
+  .navbar-collapse .nav-item {
     border-radius: 20px;
     width: 100px; /*cambio del tamaño de los botones*/
   }
@@ -424,9 +469,9 @@ h2 {
   .containerMain {
     border: dotted 2px rgb(151, 142, 215);
     width: 100%;
-    height: 80vh;
+    height: 82vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     row-gap: 20px;
@@ -453,13 +498,25 @@ h2 {
     aspect-ratio: 2/1;
   }
   /*HomePage - About Me Section*/
+  .homesect2 {
+    height: 91vh;
+  }
   .homesect2__info {
+    width: 95%;
     flex-direction: row;
     column-gap: 3rem;
     padding: 2rem;
+    justify-content: space-evenly;
   }
-  .homesect2__image {
+  .homesect2__info img {
     width: 400px;
+  }
+  .homesect2__info p {
+    border: solid;
+    border-radius: 1rem;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: rgb(196, 234, 255);
   }
   /*HomePage - Projects Section*/
   .homesect3 {
@@ -484,38 +541,164 @@ h2 {
     width: 600px;
   }
   /*Estilos PROYECTS Page*/
-  .projectsPage__container {
+  /*ilustracion Luisa*/
+  .projectsPage__container1 {
+    height: 100vh;
     border: solid;
-    grid-template-columns: 4fr auto 4fr;
-    grid-template-rows: 3rem 3fr 4rem 3fr;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    grid-template-rows: 3rem 2fr 2fr 7rem;
+    align-items: center;
+    gap: 1rem;
   }
   .project__picture {
     margin: 0;
-    aspect-ratio: 1.5/1;
+    border-radius: 1rem;
     max-width: 100%;
   }
   .project1__title {
-    grid-column: 1/2;
+    grid-column: 1/4;
   }
   .projectimg1 {
-    grid-row: 2/3;
+    grid-column: 2/5;
+    grid-row: 2/4;
+    height: 100%;
+    object-fit: cover;
   }
   .projectimg2 {
-    grid-column: 3/4;
+    grid-column: 1/2;
     grid-row: 2/3;
+    align-self: stretch;
+    justify-self: stretch;
   }
   .project1--paragrahp {
-    grid-column: 1/4;
-    grid-row: 3/4;
-    background-color: beige;
+    grid-column: 1/5;
+    grid-row: 4/5;
   }
   .projectimg3 {
     grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: stretch;
+    justify-self: stretch;
+  }
+  /*horoscopos*/
+  .projectsPage__container2 {
+    height: 400vh;
+    border: solid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    grid-template-rows: 3rem 2fr 1fr 1fr repeat(3, 1rem 2fr 1fr 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+  .project2img1 {
+    grid-column: 1/3;
+    grid-row: 2/5;
+    object-fit: cover;
+  }
+  .project2img2 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .project2img3 {
+    grid-column: 4/5;
+    grid-row: 2/4;
+  }
+  .project2--paragrahp {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    padding: 1rem;
+  }
+  /*Signos Tierra*/
+  .project2img4 {
+    grid-column: 1/3;
+    grid-row: 6/9;
+    object-fit: cover;
+  }
+  .project2img5 {
+    grid-column: 3/4;
+    grid-row: 6/8;
+  }
+  .project2img6 {
+    grid-column: 4/5;
+    grid-row: 6/8;
+  }
+  .project2--paragrahp2 {
+    grid-column: 3/5;
+    grid-row: 8/9;
+  }
+  /*Signos Fuego*/
+  .project2img7 {
+    grid-column: 1/3;
+    grid-row: 10/13;
+    object-fit: cover;
+  }
+  .project2img8 {
+    grid-column: 3/4;
+    grid-row: 10/12;
+  }
+  .project2img9 {
+    grid-column: 4/5;
+    grid-row: 10/12;
+  }
+  .project2--paragrahp3 {
+    grid-column: 3/5;
+    grid-row: 12/13;
+  }
+  /*Signos Agua*/
+  .project2img10 {
+    grid-column: 1/3;
+    grid-row: 14/17;
+    object-fit: cover;
+  }
+  .project2img11 {
+    grid-column: 3/4;
+    grid-row: 14/16;
+  }
+  .project2img12 {
+    grid-column: 4/5;
+    grid-row: 14/16;
+  }
+  .project2--paragrahp4 {
+    grid-column: 3/5;
+    grid-row: 16/17;
+  }
+  /*Polinizadores*/
+  .projectsPage__container3 {
+    height: 100vh;
+    border: solid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3rem 2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .project3__title {
+    grid-column: 1/3;
+  }
+  .project3img1 {
+    grid-column: 1/3;
+    grid-row: 2/5;
+    object-fit: cover;
+  }
+  .project3img2 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .project3img3 {
+    grid-column: 4/5;
+    grid-row: 2/4;
+  }
+  .project3--paragrahp {
+    grid-column: 3/5;
     grid-row: 4/5;
   }
-  .projectimg4 {
-    grid-column: 3/4;
-    grid-row: 4/5;
+  /*About Me Page*/
+  .aboutMe__container {
+    height: 80vh;
+    flex-direction: row;
+    background-color: rgb(230, 236, 245);
+    border: dotted 3px rgba(34, 0, 128, 0.523);
+  }
+  .aboutMe__container article {
+    padding: 1rem;
   }
   /*Footer*/
   #footer {

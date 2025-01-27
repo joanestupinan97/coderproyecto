@@ -6,12 +6,16 @@
     z-index: 1000;
     background-color: rgb(174, 183, 229);
     text-align: center;
+
+    .navbar-nav {
+      align-items: center;
+      row-gap: 3px;
+    }
+ 
+    .navbar-toggler {
+      z-index: 1050;
+    }
   }
-  
-  .navbar-toggler {
-    z-index: 1050;
-  }
-  
   
   .nav-item {
     border: solid rgb(70, 94, 171) 2px;
@@ -19,9 +23,5 @@
     width: 200px;
   }
   
-  .navbar-nav {
-    align-items: center;
-    row-gap: 3px;
-  }
- 
+
   

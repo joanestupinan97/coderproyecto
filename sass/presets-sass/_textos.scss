@@ -1,4 +1,6 @@
 
+  @use "variables";
+
   /*Estilos titulos*/
   h1, h2 {
     font-family: "Archivo Black";
@@ -6,17 +8,23 @@
   
   .lander__title {
     font-size: clamp(4rem, 20vw, 20rem);
-    color: rgb(119, 158, 243);
+    color: variables.$lander-color;
   }
   
   h1 {
     font-size: clamp(2rem, 8vw, 4rem);
-    color: rgb(106, 121, 205);
+    color: variables.$title-color;
     text-align: center;
+    
   }
-  
+  h1:hover{
+    color:variables.$title-color2;
+  }
   
   h2 {
     font-size: clamp(2rem ,6vw, 3rem);
-    color: rgb(106, 121, 205);
+    color:variables.$title-color;
+  }
+  h2:hover{
+    color: variables.$title-color3;
   }

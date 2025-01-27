@@ -7,12 +7,11 @@
     background-color: rgb(233, 247, 242);
   }
   
-  
-  
   /*estilos listas*/
   
   li {
     list-style: none;
+    transition:all 0.3s;
   }
   
   
@@ -22,8 +21,18 @@
     text-decoration: none;
   }
   
-  a:hover,
-  a:focus {
-    text-decoration: underline; /* Highlight link on interaction */
+  li:hover{
+    font-weight: bold;
+    background-color: rgb(189, 189, 238);
+    border-radius: 30px;
+    transform: translateY(-3px); /*animacion botones header*/
+  }
+
+  li:active {
+    background-color:rgb(172, 107, 238) ;
   }
   
+  ::placeholder {
+    color: rgb(148, 167, 214);
+  }
+
