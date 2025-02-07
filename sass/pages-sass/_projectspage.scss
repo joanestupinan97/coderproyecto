@@ -1,15 +1,16 @@
   /*Estilos PROYECTS Page*/
-  
+  @use "../presets-sass/variables";
   .container_Projects {
     
     border-radius: 1rem;
-    background-color: rgba(202, 197, 240, 0.962);
+    background-image: linear-gradient(rgba(219, 187, 246, 0.347),rgb(154, 209, 212));
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     padding: 3rem;
     gap: 2rem;
     text-align: justify;
+    
     p {padding: 1rem; border-radius: 1rem;}
   }
   .project__picture {
@@ -18,7 +19,12 @@
     max-width: 700px;
     height: 100%;
     object-fit: cover;
-    
     margin: 0 auto;
+    transition: all 0.2s; /*fluidez animacion imgs*/
+  }
+  .project__picture:hover {
+         /*color, x offset , y offset, blur*/
+         box-shadow: rgba(156, 130, 190, 0.761) 7px 7px 6px ;
+         transform: translateY(-5px); /*animacion imgs proyectos*/
   }
   

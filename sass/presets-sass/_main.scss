@@ -1,6 +1,6 @@
  
   /* estilos main*/
-  
+  @use "variables";
   
   #main {
     
@@ -14,16 +14,22 @@
   }
   
   .containerMain {
-    background-color: rgb(230, 236, 245);
-    border: dotted 3px rgba(34, 0, 128, 0.523);
+    background-image: linear-gradient(rgb(232, 207, 242), rgb(205, 234, 236) );
+
+    border: dotted 2px rgb(154, 209, 212);
+    border-bottom-color: variables.$color5;
+
+
+    border-radius: 1rem;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: space-around;
     align-items: center;
     overflow: hidden;
-    row-gap: 20px;
+    row-gap: 25px;
     padding: 20px;
     text-align: justify;
   }
@@ -31,18 +37,22 @@
   
   
   .button {
-    width: 90px;
+    width: 8rem;
+    height: 2rem;
     border: none;
-    background-color: rgb(139, 107, 191);
+    background-color:variables.$title-color2;
     color: white;
-    border-radius: 20px;
+    border-radius: 1rem;
     text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    
     transition: all 0.3s; /*animacion botones main*/
   }
 
   .button:hover{
     font-weight: bold;
-    background-color: rgb(189, 189, 238);
+    background-color:variables.$color1;
     border-radius: 30px;
     transform: translateY(-10px); /*animacion botones main*/
   }

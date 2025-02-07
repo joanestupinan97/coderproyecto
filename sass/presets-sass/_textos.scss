@@ -4,27 +4,35 @@
   /*Estilos titulos*/
   h1, h2 {
     font-family: "Archivo Black";
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 3px 2px 2px rgb(124, 87, 227) ;
   }
   
   .lander__title {
     font-size: clamp(4rem, 20vw, 20rem);
-    color: variables.$lander-color;
+    color: variables.$title-color2;
   }
   
   h1 {
     font-size: clamp(2rem, 8vw, 4rem);
-    color: variables.$title-color;
+    color: variables.$title-color2;
     text-align: center;
+    margin-top: 10px;
     
   }
   h1:hover{
-    color:variables.$title-color2;
+    color:variables.$color1;
   }
   
   h2 {
     font-size: clamp(2rem ,6vw, 3rem);
-    color:variables.$title-color;
+    color:variables.$title-color2;
   }
   h2:hover{
+    color: variables.$color1;
+  }
+
+  h3 {
     color: variables.$title-color3;
+    font-weight: bold;
   }

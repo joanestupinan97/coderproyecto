@@ -1,12 +1,12 @@
   /*Estilos PORTFOLIO Page*/
-  
+  @use "../presets-sass/variables";
   .portafolio__pictures{
-    border: solid;
+    
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 40px;
     padding: 1rem;
   }
@@ -14,16 +14,23 @@
   /*imagenes individuales*/
   
   .portafolio__pictures--img{
-    border: red solid 1px;
-    max-width: 600px;
+    
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     row-gap: 20px;
-    background-color: rgb(182, 213, 255);
+    background-image: linear-gradient(rgb(232, 207, 242), rgb(159, 220, 224));
     border-radius: 1rem;
     padding: 1rem;
+    transition: all 0.3s; /*fluidez animacion items portafolio*/
+  }
+
+  .portafolio__pictures--img:hover{
+      /*color, x offset , y offset, blur*/
+    box-shadow: rgb(98, 82, 143) 12px  15px 6px ;
+    transform: translateY(-10px); /*animacion items portafolio*/
   }
   
   .portafolio__pictures--img img{
@@ -36,6 +43,6 @@
   .portafolio__pictures--img article{
     font-size: 1rem;
     color: black;
-    border: 1px blue solid;
+    
   }
   

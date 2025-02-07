@@ -1,10 +1,10 @@
   /*ESTILOS GENERALES BODY*/
-  
+  @use "variables" ;
   
   body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(233, 247, 242);
+    background-color:variables.$color5;
   }
   
   /*estilos listas*/
@@ -12,8 +12,20 @@
   li {
     list-style: none;
     transition:all 0.3s; /*animacion botones header*/
+    
   }
-  
+  li:hover{
+    font-weight: bold;
+    background-color: variables.$color1;
+    border-radius: 30px;
+    border: white;
+    
+
+    transform: translateY(-3px); /*animacion botones header*/
+    .nav-link {
+      color:variables.$color5;
+    }
+  }
   
   /*estilos links*/
   
@@ -21,17 +33,7 @@
     text-decoration: none;
   }
   
-  li:hover{
-    font-weight: bold;
-    background-color: rgb(189, 189, 238);
-    border-radius: 30px;
-    transform: translateY(-3px); /*animacion botones header*/
-  }
-
-  li:active {
-    background-color:rgb(172, 107, 238) ;
-  }
-  
+ /*estilo mensaje formulario*/
   ::placeholder {
     color: rgb(148, 167, 214);
   }

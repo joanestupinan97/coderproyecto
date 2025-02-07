@@ -1,5 +1,5 @@
 /*Footer*/
-
+@use "variables";
 #footer { 
     display: flex;
     flex-direction: column;
@@ -7,20 +7,31 @@
     align-items: center;
     width: 100%;
     height: 300px;
-    background-color: rgb(209, 176, 225);
+    background-color:variables.$color4;
     text-align: center;
     p {
         margin: 0;
     }
     i {
         font-size: 35px;
-        color: rgb(85, 51, 117);
+        color:variables.$title-color2;
+        transition: all 0.3s;
     }
-    .footer__button--button{
+    i:hover{
+        transform: translateY(-5px);
+    }
+    .footer__button{
         border: solid 3px ;
         border-radius: 30px;
         padding: 5px;
-        color: rgb(243, 235, 255);
+        color:variables.$color5;
+        transition: all 0.3s;
+    }
+    .footer__button:hover {
+        font-weight: bold;
+        background-color:variables.$color1;
+        transform: translateY(-5px); /*animacion boton footer*/
+        border-color:variables.$color1;
     }
 }
 

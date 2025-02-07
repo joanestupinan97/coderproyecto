@@ -1,13 +1,15 @@
   /*Estilos header*/
-  
+  @use "variables";
+
   #header {
     width: 100%;
     position: fixed;
     z-index: 1000;
-    background-color: rgb(174, 183, 229);
+    background-color:variables.$color4;
     text-align: center;
 
     .navbar-nav {
+      
       align-items: center;
       row-gap: 3px;
     }
@@ -15,12 +17,17 @@
     .navbar-toggler {
       z-index: 1050;
     }
+
+    .container-fluid {
+      max-width: 1600px;
+    }
   }
   
   .nav-item {
-    border: solid rgb(70, 94, 171) 2px;
+    border: solid rgb(70, 94, 171) 3px;
     border-radius: 20px;
     width: 200px;
+    
   }
   
 

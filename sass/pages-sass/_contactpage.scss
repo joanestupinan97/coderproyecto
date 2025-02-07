@@ -1,9 +1,12 @@
   /* Estilos CONTACT PAGE*/
-  
+  @use "../presets-sass/variables";
   
   
   .contactPage__container {
-    border: solid rgb(235, 186, 186);
+    border: dotted rgba(147, 117, 228, 0.769);
+    border-radius: 1rem;
+    
+    background-image: linear-gradient(rgb(244, 227, 250),rgb(232, 199, 242));
     width: 100%;
     height: auto;
     display: flex;
@@ -12,34 +15,49 @@
     align-items: center;
     overflow: hidden;
     row-gap: 20px;
-    padding: 20px 0;
+    padding: 20px 5px;
+    margin-top: 2rem;
+
+    .contactPage__image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 2rem;
+    }
+
+    .contactPage__form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      max-width: 600px;
+      height: 500px;
+    }
+ 
+    .contactPage__formitems {
+      background-color: rgba(191, 189, 241, 0.676);
+      border-radius: 20px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 10px;
+      width: 90%;
+      max-width: 600px;
+      height: 400px;
+      padding: 1.5rem;
+      
+      .formArea {height: 200px;}
+    }
   }
   
-  .contactPage__image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 2rem;
-  }
-  
-  .contactPage__form {
-    background-color: rgba(191, 189, 241, 0.676);
-    border-radius: 20px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
-    width: 90%;
-    max-width: 600px;
-    height: 300px;
-  }
-  
-  .contactPage__form textarea {
-    height: 100px;
-  }
   .mapaFormContacto{
     margin-left: auto;
     margin-right: auto;
+    iframe {
+      width: 300px;
+      max-width: 800px;
+    }
   }
   
