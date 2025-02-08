@@ -1,5 +1,6 @@
   /* Estilos CONTACT PAGE*/
   @use "../presets-sass/variables";
+  @use "../presets-sass/animaciones";
   
   
   .contactPage__container {
@@ -22,6 +23,7 @@
       width: 100%;
       max-width: 500px;
       border-radius: 2rem;
+      animation: inTop 0.8s 1s both;
     }
 
     .contactPage__form{
@@ -48,6 +50,8 @@
       height: 400px;
       padding: 1.5rem;
       
+      animation: inTop 0.6s 0.7s both;
+
       .formArea {height: 200px;}
     }
   }

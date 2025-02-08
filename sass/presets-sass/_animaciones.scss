@@ -1,0 +1,35 @@
+/*Animaciones entrada desde arriba*/
+
+@keyframes inTop {
+    0% {
+      opacity: 0; transform: translateY(-20px);
+    }
+
+    100% {
+      opacity: 1;transform: translateY(0px);
+    }
+  }
+
+/*Animaciones entrada desde izquierda*/
+
+@keyframes inLeft {
+    0%{
+      transform: translateX(-500px); opacity: 0;
+    }
+    100% {
+      transform: translateX(0px); opacity: 1;
+    }
+  }
+
+  
+ /*animacion lander*/
+ @keyframes welcome-title{
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }

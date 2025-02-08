@@ -1,5 +1,6 @@
   /*Estilos PROYECTS Page*/
   @use "../presets-sass/variables";
+  @use "../presets-sass/animaciones";
   .container_Projects {
     
     border-radius: 1rem;
@@ -12,6 +13,8 @@
     text-align: justify;
     
     p {padding: 1rem; border-radius: 1rem;}
+
+    animation: inLeft 0.7s 0.7s both;
   }
   .project__picture {
     border-radius: 2rem;

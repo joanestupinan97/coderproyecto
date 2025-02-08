@@ -1,10 +1,13 @@
   /*HOME PAGE*/
   
   @use "../presets-sass/variables";
+  @use "../presets-sass/animaciones";
+
   /*Lander*/
   .lander {
     justify-content: space-evenly;
     position: relative;
+
     .lander__img {
       max-width: 100%;
       height: auto;
@@ -13,6 +16,7 @@
 
       animation: welcome-title 0.5s 0.7s backwards;
     }
+
     .lander__title {
       animation: welcome-title 0.5s 0.4s backwards;
     }
@@ -20,17 +24,6 @@
   
 
 
- /*animacion lander*/
-  @keyframes welcome-title{
-    0% {
-      opacity: 0;
-      transform: translateY(-30px) scale(0.9);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
   
   
   /*HomePage - Portfolio Section*/

@@ -1,5 +1,6 @@
   /*Estilos ABOUT ME page*/
   @use "../presets-sass/variables";
+  @use "../presets-sass/animaciones";
 
 
   .aboutMe__container {
@@ -23,6 +24,7 @@
       max-width: 100%;
       height: auto;
       object-fit: cover;
+      animation: inTop 0.5s 0.7s both;
     }
 
     .aboutMe__details {
@@ -30,12 +32,14 @@
       flex-direction: column;
       gap: 20px;
       
+      
       article{
         text-align: justify;
         background-image: linear-gradient(rgba(244, 227, 250, 0.062),rgb(227, 199, 238));
         max-width: 900px;
         border-radius: 2rem;
         padding: 1rem;
+        animation: inLeft 0.9s 0.9s both;
       }
      }
   }

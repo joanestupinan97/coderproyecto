@@ -1,11 +1,14 @@
 
   @use "variables";
+  @use "animaciones";
 
   /*Estilos titulos*/
   h1, h2 {
     font-family: "Archivo Black";
     /* offset-x | offset-y | blur-radius | color */
     text-shadow: 3px 2px 2px rgb(124, 87, 227) ;
+
+    animation: inTop 0.5s 0.4s both;
   }
   
   .lander__title {
@@ -18,6 +21,7 @@
     color: variables.$title-color2;
     text-align: center;
     margin-top: 10px;
+    transition: color 0.3s;
     
   }
   h1:hover{
@@ -27,6 +31,8 @@
   h2 {
     font-size: clamp(2rem ,6vw, 3rem);
     color:variables.$title-color2;
+    transition: color 0.3s;
+    text-transform:uppercase ;
   }
   h2:hover{
     color: variables.$color1;
@@ -36,3 +42,4 @@
     color: variables.$title-color3;
     font-weight: bold;
   }
+

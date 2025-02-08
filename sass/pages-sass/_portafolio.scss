@@ -1,5 +1,8 @@
   /*Estilos PORTFOLIO Page*/
   @use "../presets-sass/variables";
+  @use "../presets-sass/animaciones";
+
+
   .portafolio__pictures{
     
     width: 100%;
@@ -9,6 +12,8 @@
     justify-content: space-evenly;
     gap: 40px;
     padding: 1rem;
+
+    animation: inTop 0.9s 0.6s both;
   }
   
   /*imagenes individuales*/
